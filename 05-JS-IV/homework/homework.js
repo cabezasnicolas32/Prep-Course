@@ -51,26 +51,48 @@ function eliminarPropiedad (objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
+  delete objeto[unaPropiedad];
+  return objeto;
 }
 
 function nuevoUsuario (nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
-
+  let objeto = {
+    nombre:nombre,
+    email:email,
+    password:password
+  }
+  return objeto;
 }
 
 function tieneEmail (usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
+  if (usuario.email) {
+    return true;
+  }else{
+    return false;
+  }
 }
-
+                                //'nombre'
 function tienePropiedad (objeto, propiedad) {
+  // let objeto = {
+  //   nombre:nombre,
+  //   email:email,
+  //   password:password
+  // }
   // Devuelve "true" si el objeto (parámetro "objeto") tiene una propiedad (key) cuyo nombre es igual al valor del argumento "propiedad"
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (objeto[propiedad]) {
+    return true;
+  }
+    return false;
+
 }
 
 function verificarPassword (usuario, password) {
