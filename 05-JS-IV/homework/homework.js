@@ -147,7 +147,6 @@ function sumarLikesDeUsuario (usuario) {
   suma = usuario.posts.reduce((acm,e)=>{
     return acm + e.likes;
     },0)
-
   // const usuario ={
   // posts:[post={likes:21},post={likes:21}]
   // }           0                1
